@@ -8,8 +8,8 @@
 #include <string.h>
 
 int func_cd(char **args);
-int func_help(void);
-int func_exit(void);
+int func_help();
+int func_exit();
 char *func_read_line(void);
 int func_execute(char **args);
 char **func_split_line(char *line);
