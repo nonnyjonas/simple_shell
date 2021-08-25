@@ -1,0 +1,39 @@
+.TH man 1 "August 2021" "C \- language" "SIMPLE_SHELL"
+
+.SH NAME
+Simple Shell \- in C language
+
+.SH SYNOPSIS
+.B #include \(dqshell_inc.h\(dq
+.sp
+
+.SH DESCRIPTION
+.B Overview
+.sp
+The simple shell is an application that reads lines from either a file or the
+terminal, interprets them, and executes them. Users can interactively type directly
+to the
+running shell or pipe in shell scripts.
+.sp
+.B Builtins
+.sp
+This section lists the builtin commands which are builtin because they need to perform
+some operation that can't be performed by a separate process.
+.sp
+.IP "-exit [status]"
+.sp
+Terminate the shell process. If status is given, it is used as the exit status of
+the shell; otherwise the exit status of the preceding command is used.
+.sp
+.IP "-help [builtin]"
+.sp
+Retrieve informational text on how use builtin
+.sp
+.IP "-cd [directory]"
+.sp
+Change working current directory to target directory. If "-" is inputted as second
+argument, it will change to last working directory. If ".." is inputted, it will
+take user to parent directory. If input is omitted, then user is take to $HOME.
+
+.SH AUTHORS
+Chukwunonso Ede and Michael Deke
