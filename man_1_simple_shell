@@ -36,4 +36,4 @@ argument, it will change to last working directory. If ".." is inputted, it will
 take user to parent directory. If input is omitted, then user is take to $HOME.
 
 .SH AUTHORS
-Chukwunonso Ede and Michael Deke
+Chukwunonso Ede and Deke Oghenekevwe
