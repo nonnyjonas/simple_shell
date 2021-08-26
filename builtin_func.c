@@ -8,18 +8,18 @@
  */
 int func_cd(char **args)
 {
-    if (args[1] == NULL)
-    {
-        fprintf(stderr, "error: expected argument to \"cd\"\n");
-    }
-    else
-    {
-        if (chdir(args[1]) != 0)
-        {
-            perror("error");
-        }
-    }
-    return (1);
+	if (args[1] == NULL)
+	{
+		fprintf(stderr, "error: expected argument to \"cd\"\n");
+	}
+	else
+	{
+		if (chdir(args[1]) != 0)
+		{
+			perror("error");
+		}
+	}
+	return (1);
 }
 
 /**
@@ -29,5 +29,5 @@ int func_cd(char **args)
  */
 int func_exit(void)
 {
-    return (0);
+	return (0);
 }
