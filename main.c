@@ -7,19 +7,19 @@
  */
 void func_loop(void)
 {
-  char *line;
-  char **args;
-  int status;
+	char *line;
+	char **args;
+	int status;
 
-  do {
-    printf("$ ");
-    line = func_read_line();
-    args = func_split_line(line);
-    status = func_execute(args);
+	do {
+		printf("$ ");
+		line = func_read_line();
+		args = func_split_line(line);
+		status = func_execute(args);
 
-    free(line);
-    free(args);
-  } while (status);
+		free(line);
+		free(args);
+	} while (status);
 }
 
 /**
@@ -29,8 +29,7 @@ void func_loop(void)
  */
 int main(void)
 {
-  func_loop();
-  
-  return (EXIT_SUCCESS);
-}
+	func_loop();
 
+	return (EXIT_SUCCESS);
+}
