@@ -1,6 +1,6 @@
 #include "shell_inc.h"
 
-char *builtin_str[] = {
+static char *builtin_str[] = {
 	"cd",
 	"help",
 	  "exit"
