@@ -12,7 +12,6 @@ void func_loop(void)
 	int status;
 
 	do {
-		printf("$ ");
 		line = func_read_line();
 		args = func_split_line(line);
 		status = func_execute(args);
